@@ -16,7 +16,7 @@ TARGET_KERNEL_CONFIG := aosp_shinano_leo_defconfig
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/leo/device.mk)
-$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 PRODUCT_NAME := aosp_d6603

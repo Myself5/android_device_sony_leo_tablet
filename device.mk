@@ -66,6 +66,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.barometer.xml:system/etc/permissions/android.hardware.sensor.barometer.xml \
     frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:system/etc/permissions/android.hardware.sensor.gyroscope.xml
 
+PRODUCT_COPY_FILES := \
+    frameworks/native/data/etc/tablet_core_hardware.xml:system/etc/permissions/tablet_core_hardware.xml
+
 # Device Init
 PRODUCT_PACKAGES += \
     init.recovery.leo \
@@ -89,9 +92,11 @@ PRODUCT_PACKAGES += \
     InCallUI \
     Stk
 
-PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+PRODUCT_AAPT_CONFIG := xlarge
+PRODUCT_AAPT_PREBUILT_DPI := hdpi
+PRODUCT_AAPT_PREF_CONFIG := hdpi
+
+PRODUCT_CHARACTERISTICS := tablet
 
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.sf.lcd_density=480 \

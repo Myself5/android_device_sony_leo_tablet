@@ -13,8 +13,8 @@
 # limitations under the License.
 
 # Screen Resolution for the Bootanimation
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 1080
+TARGET_SCREEN_WIDTH := 1920
 
 # Inherit AOSP Shinano common device parts
 $(call inherit-product, device/sony/leo/aosp_d6603.mk)
@@ -26,7 +26,7 @@ $(call inherit-product, device/sony/shinano-common/platform_carbon.mk)
 $(call inherit-product, vendor/carbon/config/gsm.mk)
 
 # Inherit Carbon product configuration
-$(call inherit-product, vendor/carbon/config/common.mk)
+$(call inherit-product, vendor/carbon/config/common_tablet.mk)
 
 # Override Product Name for OmniROM
 PRODUCT_NAME := carbon_leo
